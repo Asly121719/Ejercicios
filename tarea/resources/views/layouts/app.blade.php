@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Suite Multi-Herramientas</title>
+    <title>Ejercicios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <style>
@@ -25,7 +25,7 @@
 <body>
 
 <aside class="sidebar">
-    <div class="brand"><i class="bi bi-grid-1x2-fill"></i> Multi-Apps</div>
+    <div class="brand"><i class="bi bi-grid-1x2-fill"></i> Apps</div>
     <nav class="nav flex-column py-2">
         <a class="nav-link {{ request()->routeIs('tasks.*') ? 'active' : '' }}" href="{{ route('tasks.index') }}"><i class="bi bi-check2-square"></i> Lista de Tareas</a>
         <a class="nav-link {{ request()->routeIs('tips.*') ? 'active' : '' }}" href="{{ route('tips.index') }}"><i class="bi bi-calculator"></i> Calculadora de Propinas</a>
